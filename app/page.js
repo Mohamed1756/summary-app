@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react";
+import Link from "next/link";
 import { Heading, Text, Box, Flex, Button, Textarea } from "@chakra-ui/react";
 
 export default function Home() {
@@ -35,21 +36,33 @@ export default function Home() {
   };
 
   return (
-    <Flex direction="column" height="100vh" bgGradient="linear(to-b, #1D1C28, #1D1C28)">
-       <Box as="header" padding="1rem">
+    <Flex direction="column" minHeight="100vh" bgGradient="linear(to-b, #1D1C28, #1D1C28)">
+      <Box as="header" padding="1rem">
         <Flex align="center" justify="space-between">
           <Heading as="h1" fontSize="5xl" bgGradient="linear(to-l, #C9FFBF, #FFAFBD)" bgClip="text">
             SummarEase
           </Heading>
           <Flex align="center">
-            <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600">Features</Text>
-            <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600">Download</Text>
-            <Text  textColor="#FFFFFF" fontSize="20px" fontWeight="600">Contact</Text>
+            <Link href="/features">
+              <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600" cursor="pointer">
+                Features
+              </Text>
+            </Link>
+            <Link href="/download">
+              <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600" cursor="pointer">
+                Download
+              </Text>
+            </Link>
+            <Link href="/contact">
+              <Text textColor="#FFFFFF" fontSize="20px" fontWeight="600" cursor="pointer">
+                Contact
+              </Text>
+            </Link>
           </Flex>
         </Flex>
       </Box>
       <Box flex="1" display="flex" alignItems="center" justifyContent="center" p="20px">
-        <Box maxW="4xl" width="100%" height="80%">
+        <Box maxW="4xl" width="100%" height="100%">
           <Heading as="h2" textAlign="center" fontSize="xl" textColor="#EB4E82" mb="20px">
             Simply paste your text, select the summary length, and get the key points in seconds.
           </Heading>

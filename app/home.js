@@ -43,7 +43,12 @@ export default function Home() {
             SummarEase
           </Heading>
           <Flex align="center">
-            <Link href="/">
+          <Link href="/">
+              <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600" cursor="pointer">
+                Home
+              </Text>
+            </Link>
+            <Link href="/features">
               <Text mr="2rem" textColor="#FFFFFF" fontSize="20px" fontWeight="600" cursor="pointer">
                 Features
               </Text>

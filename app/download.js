@@ -1,6 +1,6 @@
 import { Heading, Text, Box, Flex } from "@chakra-ui/react";
 
-export default function Features() {
+export default function Download() {
   return (
     <Flex direction="column" minHeight="100vh" bgGradient="linear(to-b, #1D1C28, #1D1C28)">
       <Box as="header" padding="1rem">
@@ -19,7 +19,7 @@ export default function Features() {
       <Box flex="1" display="flex" alignItems="center" justifyContent="center" p="20px">
         <Box maxW="4xl" width="100%" height="100%">
           <Heading as="h2" textAlign="center" fontSize="xl" textColor="#EB4E82" mb="20px">
-            Features
+            Download Browser Extensions 
           </Heading>
           <Text fontSize="lg" color="#FFFFFF">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla risus a mauris cursus, id mattis odio iaculis.
